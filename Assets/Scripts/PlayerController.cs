@@ -6,6 +6,7 @@ using System;
 public class PlayerController : MonoBehaviour {
 
 	public GameController gameController;
+	public WrapAroundBehavior wrapAroundController;
 	public Vector3 direction = Vector3.zero;
 	public GameObject explosionPrefab;
 	public GameObject playerExplosionPrefab;
@@ -268,6 +269,7 @@ public class PlayerController : MonoBehaviour {
 
 //		CreatePhysicalExplosion ();
 
+		wrapAroundController.destroyGhostShips ();
 		gameController.handlePlayerDestroyed();
 		Time.timeScale = 0.2f;
 		Destroy(gameObject);

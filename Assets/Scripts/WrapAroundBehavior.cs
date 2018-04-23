@@ -95,6 +95,15 @@ public class WrapAroundBehavior : MonoBehaviour {
 	    }
 	}
 
+	public void destroyGhostShips()
+	{
+		// All ghost ships should have the same rotation as the main ship
+		for(int i = 0; i < 8; i++)
+		{
+			Destroy (ghosts [i].gameObject);
+		}
+	}
+
 	void SwapShips()
 	{
 	      for (int i = 0; i < ghosts.Length; i ++)

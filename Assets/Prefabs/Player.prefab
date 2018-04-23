@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
+  wrapAroundController: {fileID: 114248936992024172}
   direction: {x: 0, y: 0, z: 100}
   explosionPrefab: {fileID: 1199903913866718, guid: 4e58d5a12017541a7a70c3dd3f8b0db8,
     type: 2}
