@@ -108,7 +108,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1969627338554662}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a102d82fd6cb643b79a8d97c2b1a99ce, type: 2}
   m_CullingMode: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -167,7 +167,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '-'
+  m_Text: 3
 --- !u!212 &212387307881012378
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -241,7 +241,7 @@ RectTransform:
   m_GameObject: {fileID: 1969627338554662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -16197.12}
-  m_LocalScale: {x: 70, y: 70, z: 1}
+  m_LocalScale: {x: 384, y: 384, z: 1}
   m_Children:
   - {fileID: 224426924096997038}
   m_Father: {fileID: 0}
