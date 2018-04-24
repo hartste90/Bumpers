@@ -63,11 +63,14 @@ public class SafeController : MonoBehaviour {
 	        {
 			transform.GetComponent<PolygonCollider2D>().enabled = false;
 	                gameController.HandleSafeDestroyed (coinValue, transform);
-	                //TODO: create explosion
-	                Destroy(gameObject);
+			animator.SetTrigger ("OnPopped");
 	        }
-	        healthBarImage.fillAmount = ((float)currentHealth/(float)startingHealth);
-		healthBarImage.color = Color.Lerp(Color.red, Color.green,healthBarImage.fillAmount );
+		else
+		{
+			healthBarImage.fillAmount = ((float)currentHealth/(float)startingHealth);
+			healthBarImage.color = Color.Lerp(Color.red, Color.green,healthBarImage.fillAmount );
+			animator.SetTrigger ("OnHit");
+		}   
 	}
 
 	public void GenerateCoins (int numCoins)
@@ -91,5 +94,10 @@ public class SafeController : MonoBehaviour {
 		//if you need the vector to have a specific length:
 		float coinSpeed = Random.Range (1, 3);
 		return (direction.normalized * coinSpeed);
+	}
+
+	public void OnDestroyedAnimationComplete()
+	{
+		Destroy(gameObject);
 	}
 }

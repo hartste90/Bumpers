@@ -459,7 +459,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224952676486143648, guid: 2bcc90e901b63422db860305118ec38d,
     type: 2}
   m_PrefabInternal: {fileID: 268484635}
---- !u!114 &268121375 stripped
+--- !u!114 &268121374 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114109713262235814, guid: 2bcc90e901b63422db860305118ec38d,
     type: 2}
@@ -631,11 +631,11 @@ MonoBehaviour:
   userLevel: 1
   swipeTooltipObject: {fileID: 268121372}
   initialSafeController: {fileID: 1699941676}
-  tooltipController: {fileID: 268121375}
+  tooltipController: {fileID: 268121374}
   gameStageParent: {fileID: 400534355}
-  uiController: {fileID: 1413301182}
-  endgameScreenController: {fileID: 1396909740}
-  continueScreenController: {fileID: 0}
+  uiController: {fileID: 481230364}
+  endgameScreenController: {fileID: 863776073}
+  continueScreenController: {fileID: 2019542106}
   lastTimePlayerWatchedVideo: 0
   numStartingMines: 0
   numStartingBumpers: 0
@@ -817,6 +817,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &481230364 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114102875063241460, guid: 991b69a363f234e9d955054b6da57c58,
+    type: 2}
+  m_PrefabInternal: {fileID: 1581597891}
+  m_Script: {fileID: 11500000, guid: 49aa85db5c316411c97dbf12627ce1c6, type: 3}
 --- !u!1 &598342444
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +897,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 598342444}
+--- !u!114 &863776073 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114351056015712418, guid: 840fee2db30684c71bc29c5429b9213b,
+    type: 2}
+  m_PrefabInternal: {fileID: 242196810}
+  m_Script: {fileID: 11500000, guid: a4af519c1b5674a879b2a18f3ea17b7e, type: 3}
 --- !u!224 &1004011803 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224969901496998876, guid: 52f8189bf543b4ed8b250126b33f704c,
@@ -1128,18 +1140,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224340064201643502, guid: 840fee2db30684c71bc29c5429b9213b,
     type: 2}
   m_PrefabInternal: {fileID: 242196810}
---- !u!114 &1396909740 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114351056015712418, guid: 840fee2db30684c71bc29c5429b9213b,
-    type: 2}
-  m_PrefabInternal: {fileID: 242196810}
-  m_Script: {fileID: 11500000, guid: a4af519c1b5674a879b2a18f3ea17b7e, type: 3}
---- !u!114 &1413301182 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114102875063241460, guid: 991b69a363f234e9d955054b6da57c58,
-    type: 2}
-  m_PrefabInternal: {fileID: 1581597891}
-  m_Script: {fileID: 11500000, guid: 49aa85db5c316411c97dbf12627ce1c6, type: 3}
 --- !u!1 &1493702698
 GameObject:
   m_ObjectHideFlags: 0
