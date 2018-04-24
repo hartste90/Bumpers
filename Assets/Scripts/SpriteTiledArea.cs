@@ -27,8 +27,8 @@ public class SpriteTiledArea : MonoBehaviour {
 				rend.transform.parent = transform;
 				//set your position based on math
 				rend.transform.localPosition = new Vector3 (
-					x - size.x / 2f + tileSize.x / 2f - 5, 
-					y - size.y / 2f + tileSize.y / 2f - 5, 0f);
+					x - size.x / 2f + tileSize.x / 2f, 
+					y - size.y / 2f + tileSize.y / 2f, 0f);
 			}
 		}
 
