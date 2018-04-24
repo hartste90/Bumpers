@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour {
 	public int numStartingBumpers; 
 	public int numStartingCoins; 
 
-	public static float bufferScalar = .9f;
+	public static float bufferScalar = .8f;
 
 	public float minimumSwipeDistance;
 
@@ -56,7 +56,6 @@ public class GameController : MonoBehaviour {
 		bumperList = new List<GameObject> ();
 		mineList = new List<GameObject> ();
 		lastTimePlayerWatchedVideo = -3000f;
-
 	}
 
 	public void beginTooltip()
