@@ -22,6 +22,8 @@ public class GameController : MonoBehaviour {
 	public int numStartingBumpers; 
 	public int numStartingCoins; 
 
+	public static float bufferScalar = .9f;
+
 	public float minimumSwipeDistance;
 
 	public PlayerController playerController;
@@ -123,6 +125,7 @@ public class GameController : MonoBehaviour {
 
 	public static Vector3 GetRandomLocationOnscreen ()
 	{
+//		Vector2 bottomLeftCorner = new Vector2 (.1, .1);
 		Vector2 topRightCorner = new Vector2 (1, 1);
 		Vector2 edgeVector = Camera.main.ViewportToWorldPoint (topRightCorner);
 //		Debug.Log("EDge Vector: " + edgeVector.ToString ());
@@ -130,7 +133,9 @@ public class GameController : MonoBehaviour {
 
 		float halfheight = edgeVector.y;
 		float halfwidth = edgeVector.x;
-		Vector3 position = new Vector3 (Random.Range (-halfwidth, halfwidth), Random.Range (-halfheight, halfheight), 0);
+		float validHeight = halfheight * GameController.bufferScalar;
+		float validWidth = halfwidth * GameController.bufferScalar;
+		Vector3 position = new Vector3 (Random.Range (-validWidth, validWidth), Random.Range (-validHeight, validHeight), 0);
 //		Debug.Log("Random Position: " + position.ToString ());
 		return position;
 
